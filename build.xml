@@ -26,13 +26,12 @@ includeantruntime="false">
 <path refid="NecessaryLibraries"></path>
 <pathelement location="${result.javaclasses.dir}"/>
 </classpath>
-<classpath path="./libraries/junit-4.12.jar"/>
 <formatter type="brief" usefile="false"/>
 <batchtest >
 <fileset dir="${result.javaclasses.dir}" >
-<include name="**/* _test .class"/>
+<include name="**/*testFBwithJunit.class"/>
 </fileset>
 </batchtest>
 </junit>
 </target>
-	</project>
+</project>
